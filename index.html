@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="background">
+      <img class="background" src="./img/backgound.gif" alt="" />
+    </div>
+
+    <div id="Login" class="container1">
+      <form
+        class="container2"
+        action="./dashboard/dashboard.html"
+        method="post"
+      >
+        <br />
+
+        <div class="login">
+          <p class="text-title">Login</p>
+        </div>
+
+        <div class="container">
+          <from action="./index.html" method="POST">
+            <div class="form-group">
+              <label for="username" class="label"
+                ><i class="icons fa-solid fa-user"></i
+              ></label>
+              <input
+                class="input"
+                type="text"
+                placeholder="username"
+                id="username"
+                name="username"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password" class="label"
+                ><i class="icons fa-solid fa-lock"></i
+              ></label>
+              <input
+                class="input"
+                type="password"
+                placeholder="Password"
+                id="password"
+                name="password"
+                required
+              />
+              <p id="message" class="message" style="color: red"></p>
+            </div>
+
+            <div class="options">
+              <label class="checkbox"
+                ><input type="checkbox" /> Remember me</label
+              >
+              <a
+                class="password register"
+                href="./forget.html"
+                style="color: rgba(255, 255, 255, 0.6)"
+                >Forgot Password?</a
+              >
+            </div>
+
+            <center>
+              <button type="submit" onclick="validateLogin()">
+                <p class="text-login">Log in</p>
+              </button>
+            </center>
+          </from>
+        </div>
+
+        <div class="container">
+          <span class="psw"
+            >Don't have a account ?
+            <a class="register" href="register.html">Register</a></span
+          >
+        </div>
+      </form>
+    </div>
+    <script src="permisalan.js"></script>
+  </body>
+</html>
